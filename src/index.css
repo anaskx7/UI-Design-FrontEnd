@@ -1,0 +1,49 @@
+@import "tailwindcss";
+#header{
+    font-size: 5rem;
+    animation: anime 500ms ease-in-out 10ms 2 normal forwards;
+}
+@keyframes anime{
+    0%{
+         -webkit-text-stroke: 1.5px yellow;
+         color: transparent;
+    }
+    25%{
+         -webkit-text-stroke: 1.5px yellowgreen;
+           color: transparent;
+    }
+    50%{
+         -webkit-text-stroke: 1.5px rgb(206, 206, 54);
+           color: transparent;
+    }
+    75%{
+         -webkit-text-stroke: 1.5px  rgb(213, 213, 7);
+           color: transparent;
+    }
+}
+
+@media screen and (max-width: 768px) {
+   body{
+    background-color: black;
+   }
+    #header{
+        font-size: 3rem;
+    }
+   input{
+    width: 80vmin;
+    font-size: 1.4rem;
+   }
+   textarea{
+    width: 80vmin;
+    /* font-size: 2rem; */
+   }
+   
+}
+
+#display{
+    filter: opacity(0.5);
+    filter: sepia(1);
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
